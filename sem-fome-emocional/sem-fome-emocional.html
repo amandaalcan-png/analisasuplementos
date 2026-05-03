@@ -177,6 +177,39 @@ footer p { font-size: 11px; color: rgba(255,255,255,0.2); line-height: 1.7; max-
 .reveal { opacity: 0; transform: translateY(20px); transition: opacity 0.5s ease, transform 0.5s ease; }
 .reveal.vis { opacity: 1; transform: translateY(0); }
 </style>
+
+<script>
+// Força navegador externo quando vem do TikTok
+document.addEventListener('DOMContentLoaded', function() {
+  var isTikTok = navigator.userAgent.includes('musical_ly') || 
+                 navigator.userAgent.includes('TikTok') ||
+                 navigator.userAgent.includes('BytedanceWebview');
+  
+  if (isTikTok) {
+    document.querySelectorAll('a').forEach(function(a) {
+      a.addEventListener('click', function(e) {
+        e.preventDefault();
+        var url = a.href;
+        // Tenta abrir no Chrome externo
+        window.location.href = 'intent://' + url.replace('https://', '') + '#Intent;scheme=https;package=com.android.chrome;end;';
+        // Fallback após 500ms
+        setTimeout(function() {
+          window.open(url, '_blank');
+        }, 500);
+      });
+    });
+    
+    // Adiciona aviso no topo
+    var aviso = document.createElement('div');
+    aviso.style.cssText = 'background:#F59E0B;color:#000;text-align:center;padding:10px 16px;font-size:13px;font-weight:800;position:fixed;top:0;left:0;right:0;z-index:9999;';
+    aviso.innerHTML = '⚠️ Para comprar: toque nos 3 pontinhos e abra no navegador externo';
+    document.body.prepend(aviso);
+    
+    // Ajusta padding do body
+    document.body.style.paddingTop = '42px';
+  }
+});
+</script>
 </head>
 <body>
 
