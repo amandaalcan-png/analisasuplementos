@@ -397,22 +397,28 @@ footer p { font-size: 11px; color: rgba(255,255,255,0.2); line-height: 1.7; max-
   
   if (isTikTok) {
     document.addEventListener('DOMContentLoaded', function() {
-      document.querySelectorAll('a[href*="braip"]').forEach(function(a) {
-        a.setAttribute('target', '_blank');
-        a.setAttribute('rel', 'noopener noreferrer');
-        a.addEventListener('click', function(e) {
-          e.preventDefault();
-          var url = this.href;
-          // Try intent scheme for Android Chrome
-          var intentUrl = 'intent://' + url.replace(/^https?:\/\//, '') + 
-                         '#Intent;scheme=https;package=com.android.chrome;' +
-                         'S.browser_fallback_url=' + encodeURIComponent(url) + ';end';
-          window.location.href = intentUrl;
-          // Fallback
-          setTimeout(function() {
-            window.open(url, '_blank');
-          }, 300);
-        });
+      
+      // Aviso sutil no topo — parece parte da página
+      var aviso = document.createElement('div');
+      aviso.style.cssText = 'background:#0F2D1A;color:#86EFAC;text-align:center;padding:10px 16px;font-size:13px;font-weight:700;width:100%;';
+      aviso.innerHTML = '🌿 Para garantir sua oferta: toque em ··· e abra no navegador';
+      document.body.prepend(aviso);
+
+      // Script de intent para tentar abrir Chrome automaticamente
+      document.querySelectorAll('a').forEach(function(a) {
+        if (a.href && a.href.indexOf('analisasuplementos') > -1) {
+          a.addEventListener('click', function(e) {
+            e.preventDefault();
+            var url = this.href;
+            var intentUrl = 'intent://' + url.replace(/^https?:\/\//, '') + 
+                           '#Intent;scheme=https;package=com.android.chrome;' +
+                           'S.browser_fallback_url=' + encodeURIComponent(url) + ';end';
+            window.location.href = intentUrl;
+            setTimeout(function() {
+              window.location.href = url;
+            }, 300);
+          });
+        }
       });
     });
   }
@@ -522,7 +528,7 @@ footer p { font-size: 11px; color: rgba(255,255,255,0.2); line-height: 1.7; max-
 <div class="convite reveal">
   <h2>Se você se reconheceu em alguma parte dessa história —</h2>
   <p>Isso não é coincidência. É porque você está passando pelo mesmo que eu passei. E a mesma coisa que mudou pra mim pode mudar pra você.</p>
-  <p>Testei muita coisa antes de chegar aqui. Errei bastante. Mas depois de muito tempo buscando, encontrei uma solução real que ajuda no problema pela raiz — e não consigo guardar isso só pra mim.</p>
+  <p>Não estou te vendendo nada. Estou te mostrando o que funcionou. O próximo passo é seu.</p>
 
   <div class="escassez reveal">
     ⚠️ Desconto especial ativo — apenas <span>37 unidades</span> disponíveis hoje
