@@ -387,6 +387,38 @@ footer p { font-size: 11px; color: rgba(255,255,255,0.2); line-height: 1.7; max-
 .reveal { opacity: 0; transform: translateY(20px); transition: opacity 0.6s ease, transform 0.6s ease; }
 .reveal.vis { opacity: 1; transform: translateY(0); }
 </style>
+
+<script>
+(function() {
+  var ua = navigator.userAgent || '';
+  var isTikTok = ua.indexOf('musical_ly') > -1 || 
+                 ua.indexOf('TikTok') > -1 || 
+                 ua.indexOf('BytedanceWebview') > -1;
+  
+  if (isTikTok) {
+    document.addEventListener('DOMContentLoaded', function() {
+      document.querySelectorAll('a[href*="braip"]').forEach(function(a) {
+        a.setAttribute('target', '_blank');
+        a.setAttribute('rel', 'noopener noreferrer');
+        a.addEventListener('click', function(e) {
+          e.preventDefault();
+          var url = this.href;
+          // Try intent scheme for Android Chrome
+          var intentUrl = 'intent://' + url.replace(/^https?:\/\//, '') + 
+                         '#Intent;scheme=https;package=com.android.chrome;' +
+                         'S.browser_fallback_url=' + encodeURIComponent(url) + ';end';
+          window.location.href = intentUrl;
+          // Fallback
+          setTimeout(function() {
+            window.open(url, '_blank');
+          }, 300);
+        });
+      });
+    });
+  }
+})();
+</script>
+
 </head>
 <body>
 
@@ -490,7 +522,7 @@ footer p { font-size: 11px; color: rgba(255,255,255,0.2); line-height: 1.7; max-
 <div class="convite reveal">
   <h2>Se você se reconheceu em alguma parte dessa história —</h2>
   <p>Isso não é coincidência. É porque você está passando pelo mesmo que eu passei. E a mesma coisa que mudou pra mim pode mudar pra você.</p>
-  <p>Não estou te vendendo nada. Estou te mostrando o que funcionou. O próximo passo é seu.</p>
+  <p>Testei muita coisa antes de chegar aqui. Errei bastante. Mas depois de muito tempo buscando, encontrei uma solução real que ajuda no problema pela raiz — e não consigo guardar isso só pra mim.</p>
 
   <div class="escassez reveal">
     ⚠️ Desconto especial ativo — apenas <span>37 unidades</span> disponíveis hoje
