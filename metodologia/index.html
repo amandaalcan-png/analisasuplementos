@@ -3,85 +3,273 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="google-site-verification" content="n_ByoIQdnZHBEknOL3kboQwxbi4Ws-DOsARcKWSLmvs" />
-<meta name="google-site-verification" content="XtzMEc1emaZk8KMKdjL2y8IAsT-2PDK_m2sF5Sh2k2Q" />
-<link rel="canonical" href="https://analisasuplementos.com.br/metodologia/" />
-<title>Nossa Metodologia de Análise — Analisa Suplementos</title>
-<meta name="description" content="Entenda como analisamos suplementos no Analisa Suplementos. Critérios técnicos, investigação de reclamações e padrões de qualidade.">
+<title>Metodologia de Análise | Analisa Suplementos</title>
+<meta name="description" content="Como analisamos cada suplemento: as 5 etapas, os critérios de nota, as fontes consultadas e o que nunca fazemos. Transparência total do processo.">
+<link rel="canonical" href="https://analisasuplementos.com.br/metodologia/">
+<meta name="robots" content="index, follow, max-image-preview:large">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Metodologia de Análise | Analisa Suplementos">
+<meta property="og:description" content="Como analisamos cada suplemento: as 5 etapas, os critérios de nota, as fontes consultadas e o que nunca fazemos. Transparência total do processo.">
+<meta property="og:url" content="https://analisasuplementos.com.br/metodologia/">
 <link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 <style>
+:root{--ouro:#e8a020;--ouro2:#f5c46a;--bg:#100b04;--card:#191108;--card2:#1f150a;--texto:#ececec;--suave:#9d968c;--linha:#2e2114;--verde:#2d7a4f;--verde2:#39a066;--vermelho:#d9584f}
 *{margin:0;padding:0;box-sizing:border-box}
-body{font-family:'Inter',sans-serif;background:#0a0a0f;color:#e8e8e8;line-height:1.7;font-size:16px}
-.header{background:rgba(0,0,0,0.4);border-bottom:1px solid rgba(255,255,255,0.08);padding:14px 24px;display:flex;align-items:center;justify-content:space-between}
-.logo{font-family:'Playfair Display',serif;font-size:18px;color:#c9a84c;font-weight:700;text-decoration:none}
-.container{max-width:740px;margin:0 auto;padding:40px 20px 80px}
-h1{font-family:'Playfair Display',serif;font-size:clamp(28px,5vw,40px);color:#c9a84c;margin-bottom:16px}
-h2{font-family:'Playfair Display',serif;font-size:22px;color:#c9a84c;margin:32px 0 12px}
-p{color:#a0a0a0;font-size:16px;margin-bottom:14px;line-height:1.7}
-.step{background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.08);border-radius:10px;padding:20px;margin:12px 0;display:flex;gap:16px}
-.step-num{width:36px;height:36px;border-radius:50%;background:#c9a84c;color:#000;display:flex;align-items:center;justify-content:center;font-weight:700;font-size:16px;flex-shrink:0}
-.step-body h3{font-size:16px;color:#fff;margin-bottom:6px}
-.step-body p{font-size:14px;margin:0}
-footer{background:rgba(0,0,0,0.4);border-top:1px solid rgba(255,255,255,0.08);padding:24px 20px;text-align:center;font-size:12px;color:#555;line-height:1.8}
-footer a{color:#666;text-decoration:none}
+html{scroll-behavior:smooth}
+body{background:var(--bg);color:var(--texto);font-family:'Inter',sans-serif;line-height:1.72;font-size:17px;-webkit-font-smoothing:antialiased}
+.wrap{max-width:780px;margin:0 auto;padding:0 20px}
+img{max-width:100%;height:auto;display:block}
+a{color:var(--ouro)}
+.topbar{background:linear-gradient(90deg,#160f06,#241804);border-bottom:1px solid var(--linha);padding:11px 0;font-size:13px;color:var(--suave);letter-spacing:.2px}
+.topbar b{color:var(--ouro);font-weight:700}
+.crumb{font-size:13px;color:var(--suave);padding:18px 0 4px}
+.crumb a{color:var(--suave);text-decoration:none}
+.tag{display:inline-block;background:rgba(232,160,32,.13);color:var(--ouro);border:1px solid rgba(232,160,32,.35);font-size:12px;font-weight:700;letter-spacing:1.2px;text-transform:uppercase;padding:5px 12px;border-radius:100px;margin-bottom:14px}
+h1{font-family:'Playfair Display',serif;font-size:42px;line-height:1.15;color:#fff;margin:6px 0 18px;letter-spacing:-.5px}
+h1 em{color:var(--ouro);font-style:italic}
+h2{font-family:'Playfair Display',serif;font-size:29px;color:#fff;margin:46px 0 16px;line-height:1.25}
+h3{font-size:19px;color:var(--ouro2);margin:28px 0 10px;font-weight:700}
+p{margin:0 0 17px}
+.lead{font-size:19.5px;color:#dcd6cd}
+.lead b{color:#fff}
+.autor{display:flex;align-items:center;gap:12px;font-size:13.5px;color:var(--suave);border-top:1px solid var(--linha);border-bottom:1px solid var(--linha);padding:14px 0;margin:24px 0 30px}
+.avatar{width:38px;height:38px;border-radius:50%;background:linear-gradient(135deg,var(--ouro),#8a5b12);display:flex;align-items:center;justify-content:center;font-weight:800;color:#1a1000;flex-shrink:0;font-size:15px}
+.hero{display:grid;grid-template-columns:1fr 1fr;gap:18px;margin:28px 0}
+.hero-img{background:linear-gradient(160deg,var(--card2),#120c05);border:1px solid var(--linha);border-radius:14px;padding:14px;display:flex;align-items:center;justify-content:center}
+.hero-img img{border-radius:8px}
+.ficha{background:var(--card);border:1px solid var(--linha);border-radius:14px;padding:20px}
+.ficha .lin{display:flex;justify-content:space-between;gap:10px;padding:9px 0;border-bottom:1px dashed var(--linha);font-size:14.5px}
+.ficha .lin:last-child{border:0}
+.ficha .k{color:var(--suave)}
+.ficha .v{color:#fff;font-weight:600;text-align:right}
+.tldr{background:linear-gradient(150deg,#2a1d07,#1a1206);border:1px solid var(--ouro);border-radius:16px;padding:26px;margin:30px 0;box-shadow:0 10px 40px rgba(232,160,32,.09)}
+.tldr h2{margin:0 0 6px;font-size:24px}
+.notabox{display:flex;align-items:center;gap:14px;margin:14px 0 18px}
+.nota{background:linear-gradient(135deg,var(--ouro),#c07f10);color:#170f03;font-weight:800;padding:9px 18px;border-radius:10px;font-size:26px;line-height:1;font-family:'Inter',sans-serif}
+.estrelas{color:var(--ouro);font-size:17px;letter-spacing:2px}
+.notabox small{display:block;color:var(--suave);font-size:12.5px;letter-spacing:.5px;margin-top:4px}
+.chk{list-style:none;margin:0}
+.chk li{padding-left:30px;position:relative;margin-bottom:11px;font-size:16.5px}
+.chk li:before{content:"✓";position:absolute;left:0;top:0;color:var(--verde2);font-weight:800;font-size:18px}
+.chk li.x:before{content:"!";color:var(--ouro);background:rgba(232,160,32,.15);width:20px;height:20px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:13px;top:3px}
+.videobox{margin:32px 0}
+.videobox .rat{position:relative;padding-bottom:56.25%;height:0;border-radius:14px;overflow:hidden;border:1px solid var(--linha)}
+.videobox iframe{position:absolute;top:0;left:0;width:100%;height:100%;border:0}
+.legenda{font-size:13.5px;color:var(--suave);text-align:center;margin-top:10px}
+.disc{background:rgba(255,255,255,.03);border-left:3px solid var(--suave);padding:12px 16px;font-size:13.5px;color:var(--suave);margin:24px 0;border-radius:6px}
+.cta{background:linear-gradient(155deg,#1c2f22,#12180f);border:1px solid rgba(57,160,102,.4);border-radius:18px;padding:32px 26px;text-align:center;margin:38px 0;box-shadow:0 12px 40px rgba(0,0,0,.4)}
+.cta .titulo{font-family:'Playfair Display',serif;font-size:26px;color:#fff;margin-bottom:10px;line-height:1.3}
+.cta p{font-size:15.5px;color:#b9c4bc;margin-bottom:22px;max-width:520px;margin-left:auto;margin-right:auto}
+.btn{display:inline-block;background:linear-gradient(135deg,var(--verde2),var(--verde));color:#fff!important;text-decoration:none;font-weight:800;font-size:17.5px;padding:18px 34px;border-radius:12px;box-shadow:0 6px 22px rgba(45,122,79,.45);letter-spacing:.2px;transition:transform .15s}
+.btn:hover{transform:translateY(-2px)}
+.selo{font-size:13px;color:#9fb0a4;margin-top:14px;display:flex;gap:16px;justify-content:center;flex-wrap:wrap}
+table{width:100%;border-collapse:collapse;margin:22px 0;font-size:15px;background:var(--card);border-radius:12px;overflow:hidden}
+th{background:#241804;color:var(--ouro);text-align:left;padding:13px;font-weight:700;font-size:13.5px;text-transform:uppercase;letter-spacing:.6px}
+td{padding:13px;border-top:1px solid var(--linha);vertical-align:top}
+td b{color:#fff}
+.alerta{background:linear-gradient(150deg,#2c1409,#1b0e07);border-left:4px solid var(--vermelho);padding:20px;border-radius:10px;margin:28px 0}
+.alerta b{color:#ff9d8f}
+.medico{background:linear-gradient(150deg,#0f1e16,#0c1410);border-left:4px solid var(--verde2);padding:20px;border-radius:10px;margin:28px 0}
+.medico b{color:#8fd6a8}
+ul.pad{margin:0 0 18px 20px}ul.pad li{margin-bottom:10px}
+.grid2{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin:24px 0}
+.box{background:var(--card);border:1px solid var(--linha);border-radius:14px;padding:20px}
+.box h4{font-size:15px;margin-bottom:12px;letter-spacing:.5px;text-transform:uppercase}
+.box.bom h4{color:var(--verde2)}.box.ruim h4{color:#e8917d}
+.box ul{list-style:none}
+.box li{font-size:15px;padding-left:20px;position:relative;margin-bottom:10px;line-height:1.6}
+.box.bom li:before{content:"+";position:absolute;left:0;color:var(--verde2);font-weight:800}
+.box.ruim li:before{content:"−";position:absolute;left:0;color:#e8917d;font-weight:800}
+.fase{border-left:2px solid var(--linha);padding-left:20px;margin:22px 0}
+.fase .item{position:relative;margin-bottom:20px}
+.fase .item:before{content:"";position:absolute;left:-26px;top:8px;width:10px;height:10px;border-radius:50%;background:var(--ouro)}
+.fase b{color:var(--ouro2);display:block;font-size:15px}
+.faq details{border-bottom:1px solid var(--linha);padding:4px 0}
+.faq summary{cursor:pointer;padding:16px 0;font-weight:700;color:#fff;font-size:17px;list-style:none;display:flex;justify-content:space-between;gap:12px}
+.faq summary::-webkit-details-marker{display:none}
+.faq summary:after{content:"+";color:var(--ouro);font-size:22px;font-weight:400;line-height:1}
+.faq details[open] summary:after{content:"−"}
+.faq .resp{padding:0 0 16px;color:#cfc8bf;font-size:16px}
+.rel{background:var(--card);border:1px solid var(--linha);border-radius:14px;padding:22px;margin:38px 0}
+.rel b{color:#fff;display:block;margin-bottom:10px}
+.rel a{display:block;text-decoration:none;padding:9px 0;font-weight:600;border-bottom:1px solid var(--linha)}
+.rel a:last-child{border:0}
+.sticky{position:fixed;left:0;right:0;bottom:0;background:rgba(16,11,4,.97);border-top:1px solid var(--linha);padding:11px 16px;display:flex;align-items:center;justify-content:space-between;gap:12px;z-index:99;backdrop-filter:blur(8px)}
+.sticky .txt{font-size:13px;color:var(--suave);line-height:1.35}
+.sticky .txt b{color:#fff;display:block;font-size:14px}
+.sticky a{background:linear-gradient(135deg,var(--verde2),var(--verde));color:#fff;text-decoration:none;font-weight:800;padding:12px 18px;border-radius:10px;font-size:14.5px;white-space:nowrap}
+footer{border-top:1px solid var(--linha);margin-top:50px;padding:28px 0 110px;font-size:13px;color:var(--suave)}
+footer b{color:#c6bdb2}
+footer a{color:var(--suave)}
+@media(max-width:640px){
+h1{font-size:31px}h2{font-size:24px}body{font-size:16.5px}.lead{font-size:18px}
+.hero,.grid2{grid-template-columns:1fr}
+.wrap{padding:0 16px}.tldr,.cta{padding:22px 18px}.btn{width:100%;padding:17px 12px;font-size:16px}
+.cta .titulo{font-size:22px}table{font-size:14px}th,td{padding:10px}
+}
+.hubgrid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:18px;margin:30px 0}
+.hubcard{background:linear-gradient(160deg,var(--card2),#120c05);border:1px solid var(--linha);border-radius:16px;padding:24px;text-decoration:none;display:block;transition:transform .15s,border-color .15s}
+.hubcard:hover{transform:translateY(-3px);border-color:var(--ouro)}
+.hubcard .ico{font-size:30px;margin-bottom:10px;display:block}
+.hubcard h3{font-family:'Playfair Display',serif;font-size:21px;color:#fff;margin:0 0 8px}
+.hubcard p{font-size:14.5px;color:var(--suave);margin:0 0 12px;line-height:1.6}
+.hubcard .qtd{font-size:12.5px;color:var(--ouro);font-weight:700;letter-spacing:.6px;text-transform:uppercase}
+.prodgrid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:18px;margin:28px 0}
+.prod{background:var(--card);border:1px solid var(--linha);border-radius:16px;padding:22px;display:flex;flex-direction:column}
+.prod .top{display:flex;justify-content:space-between;align-items:flex-start;gap:10px;margin-bottom:10px}
+.prod h3{font-family:'Playfair Display',serif;font-size:22px;color:#fff;margin:0;line-height:1.2}
+.prod .n{background:linear-gradient(135deg,var(--ouro),#c07f10);color:#170f03;font-weight:800;padding:5px 11px;border-radius:8px;font-size:15px;white-space:nowrap;flex-shrink:0}
+.prod .tagl{font-size:12.5px;color:var(--ouro2);letter-spacing:.5px;text-transform:uppercase;font-weight:700;margin-bottom:10px}
+.prod p{font-size:15px;color:#cfc8bf;margin:0 0 14px;flex-grow:1;line-height:1.65}
+.prod .meta{font-size:13px;color:var(--suave);border-top:1px solid var(--linha);padding-top:12px;margin-bottom:14px}
+.prod .links a{display:block;color:var(--ouro);text-decoration:none;font-size:14.5px;font-weight:600;padding:5px 0}
+.prod .links a:hover{color:var(--ouro2)}
+.prod .go{display:block;background:linear-gradient(135deg,var(--verde2),var(--verde));color:#fff;text-align:center;text-decoration:none;font-weight:800;padding:13px;border-radius:10px;margin-top:12px;font-size:15.5px}
+.intro{background:linear-gradient(150deg,#2a1d07,#1a1206);border:1px solid var(--linha);border-radius:16px;padding:26px;margin:28px 0}
+.intro h2{margin-top:0}
+.destaque{background:var(--card);border-left:4px solid var(--ouro);border-radius:10px;padding:18px 20px;margin:24px 0}
+.metod{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:16px;margin:24px 0}
+.metod div{background:var(--card);border:1px solid var(--linha);border-radius:12px;padding:18px}
+.metod b{color:var(--ouro2);display:block;margin-bottom:6px;font-size:15px}
+.metod span{font-size:14px;color:var(--suave);line-height:1.6}
+@media(max-width:640px){.hubgrid,.prodgrid,.metod{grid-template-columns:1fr}}
 </style>
-</head>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@graph":[
+{"@type":"Organization","@id":"https://analisasuplementos.com.br/#org","name":"Analisa Suplementos","url":"https://analisasuplementos.com.br/","email":"contato@analisasuplementos.com.br"},
+{"@type":"WebPage","@id":"https://analisasuplementos.com.br/metodologia/#page","name":"Metodologia de Análise | Analisa Suplementos","description":"Como analisamos cada suplemento: as 5 etapas, os critérios de nota, as fontes consultadas e o que nunca fazemos. Transparência total do processo.","url":"https://analisasuplementos.com.br/metodologia/","isPartOf":{"@id":"https://analisasuplementos.com.br/#org"},"inLanguage":"pt-BR","dateModified":"2026-08-13"},
+{"@type":"BreadcrumbList","itemListElement":[
+{"@type":"ListItem","position":1,"name":"Início","item":"https://analisasuplementos.com.br/"},
+{"@type":"ListItem","position":2,"name":"Metodologia","item":"https://analisasuplementos.com.br/metodologia/"}]},
+{"@type":"FAQPage","mainEntity":[
+{"@type": "Question", "name": "Como o Analisa Suplementos escolhe os produtos que analisa?", "acceptedAnswer": {"@type": "Answer", "text": "Priorizamos produtos com volume relevante de busca no Brasil e que geram dúvidas frequentes de consumidores. Também aceitamos sugestões de leitores pelo e-mail de contato."}},
+{"@type": "Question", "name": "A nota máxima é 10?", "acceptedAnswer": {"@type": "Answer", "text": "Não. A nota máxima possível é 9.2. Nenhum suplemento é perfeito, e nota máxima soa a propaganda em vez de análise."}},
+{"@type": "Question", "name": "Vocês testam os produtos em laboratório?", "acceptedAnswer": {"@type": "Answer", "text": "Não. Nosso trabalho é documental e comparativo: verificamos composição declarada, mecanismo dos ativos segundo a literatura, preços e condições de garantia. Não temos como verificar as quantidades efetivamente presentes no produto."}},
+{"@type": "Question", "name": "O que acontece quando o fabricante não divulga a composição?", "acceptedAnswer": {"@type": "Answer", "text": "Buscamos em farmácias e distribuidoras online, que exibem a composição por obrigação regulatória. Se duas ou mais fontes independentes convergem, usamos com atribuição. Se não encontramos ou se as fontes se contradizem, informamos isso ao leitor."}},
+{"@type": "Question", "name": "A comissão de afiliado influencia a nota?", "acceptedAnswer": {"@type": "Answer", "text": "Não. Produtos que remuneram melhor não recebem avaliação melhor. Já reduzimos notas por composição não divulgada e por garantia curta em produtos com boa comissão."}},
+{"@type": "Question", "name": "Com que frequência as análises são atualizadas?", "acceptedAnswer": {"@type": "Answer", "text": "Revisamos as análises periodicamente e sempre que identificamos mudança relevante de preço, kit ou política de garantia. Cada página traz a data da última revisão."}}]}]}
+</script></head>
 <body>
-<div class="header">
-  <a href="https://analisasuplementos.com.br" class="logo">Analisa Suplementos</a>
+<div class="topbar"><div class="wrap"><b>ANALISA SUPLEMENTOS</b> &nbsp;·&nbsp; Metodologia &nbsp;·&nbsp; Atualizado em agosto de 2026</div></div>
+<div class="wrap">
+
+<nav class="crumb"><a href="/">Início</a> › Metodologia</nav>
+
+<span class="tag">Transparência Editorial</span>
+<h1>Nossa Metodologia: <em>Como Chegamos a Cada Conclusão</em></h1>
+
+<p class="lead">Publicar uma análise é fácil. <b>Explicar como você chegou a ela é o que separa opinião de método.</b></p>
+<p class="lead">Este documento descreve exatamente como avaliamos cada produto — quais fontes consultamos, como calculamos a nota e o que nunca fazemos. É o padrão que aplicamos a todos, independentemente de comissão.</p>
+
+<div class="autor">
+<div class="avatar">AS</div>
+<div>Por <b style="color:#fff">Amanda Souza</b> · Analisa Suplementos<br>Última atualização: 13 de agosto de 2026</div>
 </div>
-<div class="container">
-  <h1>Nossa Metodologia</h1>
-  <p>Cada análise publicada no Analisa Suplementos segue um processo estruturado de avaliação técnica e investigação de mercado. Entenda como trabalhamos.</p>
 
-  <h2>Como analisamos cada produto</h2>
 
-  <div class="step">
-    <div class="step-num">1</div>
-    <div class="step-body">
-      <h3>Análise dos ingredientes</h3>
-      <p>Verificamos cada ingrediente declarado pelo fabricante em bases científicas — PubMed, estudos clínicos e literatura especializada em nutrição e suplementação.</p>
-    </div>
-  </div>
-  <div class="step">
-    <div class="step-num">2</div>
-    <div class="step-body">
-      <h3>Verificação regulatória</h3>
-      <p>Checamos o status do produto junto à ANVISA. Produtos com alertas ativos ou ingredientes proibidos são reprovados automaticamente.</p>
-    </div>
-  </div>
-  <div class="step">
-    <div class="step-num">3</div>
-    <div class="step-body">
-      <h3>Investigação de reclamações</h3>
-      <p>Pesquisamos o Reclame Aqui, grupos especializados no Facebook e fóruns de saúde para identificar padrões de problemas reais relatados por consumidores.</p>
-    </div>
-  </div>
-  <div class="step">
-    <div class="step-num">4</div>
-    <div class="step-body">
-      <h3>Verificação do fabricante</h3>
-      <p>Confirmamos CNPJ ativo, site oficial funcionando e canais de suporte disponíveis. Fabricantes sem transparência são sinalizados.</p>
-    </div>
-  </div>
-  <div class="step">
-    <div class="step-num">5</div>
-    <div class="step-body">
-      <h3>Avaliação da garantia</h3>
-      <p>Verificamos se a garantia oferecida é real e acessível. Produtos com garantia apenas declarada mas sem processo claro de devolução são penalizados.</p>
-    </div>
-  </div>
-
-  <h2>Critérios de reprovação automática</h2>
-  <p>Reprovamos qualquer produto que apresente: alerta ativo da ANVISA, ingrediente controlado não declarado, fabricante sem CNPJ verificável, ou histórico de adulteração confirmado.</p>
-
-  <h2>Aviso importante</h2>
-  <p>Nossas análises são informativas e não substituem orientação médica. Sempre consulte um profissional de saúde antes de iniciar qualquer suplementação, especialmente se tiver condições de saúde pré-existentes.</p>
+<div class="intro">
+<h2>Por que publicamos nossa metodologia</h2>
+<p>Qualquer site pode dizer que é independente. <b>Poucos explicam como chegam às conclusões.</b></p>
+<p>Publicamos este documento para que você possa julgar por conta própria se nossas análises merecem confiança — e para que possa nos cobrar quando não seguirmos o que está escrito aqui.</p>
 </div>
+
+<h2>As 5 etapas de cada análise</h2>
+
+<h3>1. Localizar a composição real</h3>
+<p>Começamos sempre pelo rótulo. Quando o fabricante publica a lista de ingredientes, usamos essa fonte. Quando não publica — o que é comum no mercado brasileiro —, buscamos em <b>farmácias e distribuidoras online</b>, que são obrigadas a exibir a composição dos produtos que vendem.</p>
+<p><b>Regra de convergência:</b> se duas ou mais fontes independentes trazem listas compatíveis, usamos com atribuição. Se as fontes se contradizem, não escolhemos uma — informamos a divergência ao leitor.</p>
+<p><b>Se não encontramos a composição em nenhuma fonte confiável, dizemos isso.</b> Nunca preenchemos a lacuna com suposição.</p>
+
+<h3>2. Verificar o mecanismo de cada ativo</h3>
+<p>Para cada ingrediente identificado, descrevemos <b>o que ele faz no organismo</b> segundo a literatura científica disponível — não adjetivos de marketing.</p>
+<p>Isso significa explicar que a arginina é precursora do óxido nítrico, que a piperina aumenta a biodisponibilidade da curcumina, ou que a inulina alimenta bifidobactérias intestinais. Informação verificável, em linguagem que dá para entender.</p>
+<p>Quando a evidência sobre um ativo é fraca ou heterogênea, <b>dizemos isso também</b>.</p>
+
+<h3>3. Comparar todos os kits</h3>
+<p>Levantamos o preço de <b>cada opção do catálogo</b> e calculamos o custo por unidade. É a etapa que mais gera economia para o leitor: a diferença entre o pote avulso e o kit maior frequentemente passa de 50%, e a página de vendas raramente deixa isso explícito.</p>
+<p>Também verificamos se a <b>garantia vale para todos os kits</b> ou apenas para alguns — detalhe que muda completamente qual opção faz sentido comprar.</p>
+
+<h3>4. Analisar garantia e direitos do consumidor</h3>
+<p>Registramos o prazo declarado pelo fabricante, o que ele cobre e como acioná-lo na prática.</p>
+<p>E acrescentamos o que a lei garante independentemente da política da empresa: o <b>artigo 49 do Código de Defesa do Consumidor</b> (7 dias de arrependimento em compras online), o <b>artigo 35</b> (atraso na entrega) e o <b>artigo 37</b> (publicidade enganosa), além do canal gratuito consumidor.gov.br.</p>
+
+<h3>5. Comparar marketing e realidade</h3>
+<p>A última etapa é confrontar o que o anúncio promete com o que a fórmula pode entregar.</p>
+<p>Quando encontramos exagero — promessa de perda de peso impossível, afirmação de aprovação regulatória que não existe, alegação de tratar doença —, <b>apontamos com clareza</b>, mesmo que o produto gere comissão.</p>
+
+<h2>Como a nota é calculada</h2>
+<p>A nota vai de 0 a <b>9.2</b>. Nunca 10, porque nenhum suplemento é perfeito e porque nota máxima soa a propaganda.</p>
+
+<table>
+<thead><tr><th>Critério</th><th>O que avaliamos</th></tr></thead>
+<tbody>
+<tr><td><b>Transparência da composição</b></td><td>O fabricante publica a lista completa? Informa as quantidades? Explica cada ativo?</td></tr>
+<tr><td><b>Respaldo dos ativos</b></td><td>Os ingredientes têm mecanismo descrito e pesquisa consolidada, ou são apenas ingredientes da moda?</td></tr>
+<tr><td><b>Clareza comercial</b></td><td>Os preços são claros? As condições de cada kit estão explícitas? Há custo escondido?</td></tr>
+<tr><td><b>Garantia</b></td><td>Qual o prazo, o que cobre, vale para todos os kits, e é compatível com o tempo que o produto leva para agir?</td></tr>
+<tr><td><b>Coerência do marketing</b></td><td>O que o anúncio promete é possível? Há afirmação regulatória incorreta ou promessa impossível?</td></tr>
+</tbody>
+</table>
+
+<div class="destaque">
+<p style="margin:0"><b>Comissão não influencia nota.</b> Produtos que remuneram melhor não recebem avaliação melhor por isso. Já reduzimos nota por composição não divulgada e por garantia curta em produtos que geram comissão acima da média — e mantivemos essas observações publicadas.</p>
+</div>
+
+<h2>Fontes que consultamos</h2>
+<ul class="pad">
+<li><b>Rótulos e materiais oficiais</b> do fabricante</li>
+<li><b>Farmácias e distribuidoras online</b>, que exibem a composição por obrigação regulatória</li>
+<li><b>Literatura científica</b> sobre os ingredientes identificados</li>
+<li><b>Legislação brasileira aplicável</b> — RDC 243/2018 e IN 28/2018 da Anvisa, e o Código de Defesa do Consumidor</li>
+<li><b>Registros públicos de reclamação</b>, quando existem para o produto</li>
+</ul>
+
+<h2>O que nunca fazemos</h2>
+<ul class="pad">
+<li><b>Nunca inventamos composição.</b> Lacuna de informação é reportada, não preenchida.</li>
+<li><b>Nunca criamos depoimentos.</b> Não publicamos relatos que não podemos verificar.</li>
+<li><b>Nunca inventamos credenciais</b> nem usamos personas fictícias de especialistas.</li>
+<li><b>Nunca afirmamos que a Anvisa aprovou um suplemento.</b> Ela regulariza por notificação, sem avaliação prévia de eficácia — e corrigimos essa informação quando aparece no material do fabricante.</li>
+<li><b>Nunca dizemos que suplemento trata, cura ou previne doença.</b> É proibido pela regulação brasileira, e com razão.</li>
+<li><b>Nunca reproduzimos prints</b> de plataformas de reclamação. Descrevemos padrões em texto próprio.</li>
+</ul>
+
+<h2>Limites do nosso trabalho</h2>
+<div class="destaque">
+<p style="margin:0">Nosso trabalho é <b>documental e comparativo</b>, não clínico. Não somos médicos nem nutricionistas, não fazemos diagnóstico, prescrição ou recomendação individualizada. Não testamos os produtos em laboratório e não temos como verificar as quantidades declaradas. Para decisões sobre a sua saúde, o profissional certo é o seu médico ou nutricionista.</p>
+</div>
+
+<h2>Atualização e correção</h2>
+<p>Preços, kits e políticas de garantia mudam com frequência. Cada análise traz a <b>data da última revisão</b>, e recomendamos sempre confirmar os valores vigentes no site oficial antes de comprar.</p>
+<p>Se você encontrar informação desatualizada ou incorreta, escreva para <b>contato@analisasuplementos.com.br</b>. Corrigimos e registramos a nova data de revisão na página.</p>
+
+
+<h2>Perguntas frequentes</h2>
+<div class="faq">
+<details open><summary>Como o Analisa Suplementos escolhe os produtos que analisa?</summary><div class="resp">Priorizamos produtos com volume relevante de busca no Brasil e que geram dúvidas frequentes de consumidores. Também aceitamos sugestões de leitores pelo e-mail de contato.</div></details>
+<details><summary>A nota máxima é 10?</summary><div class="resp">Não. A nota máxima possível é 9.2. Nenhum suplemento é perfeito, e nota máxima soa a propaganda em vez de análise.</div></details>
+<details><summary>Vocês testam os produtos em laboratório?</summary><div class="resp">Não. Nosso trabalho é documental e comparativo: verificamos composição declarada, mecanismo dos ativos segundo a literatura, preços e condições de garantia. Não temos como verificar as quantidades efetivamente presentes no produto.</div></details>
+<details><summary>O que acontece quando o fabricante não divulga a composição?</summary><div class="resp">Buscamos em farmácias e distribuidoras online, que exibem a composição por obrigação regulatória. Se duas ou mais fontes independentes convergem, usamos com atribuição. Se não encontramos ou se as fontes se contradizem, informamos isso ao leitor.</div></details>
+<details><summary>A comissão de afiliado influencia a nota?</summary><div class="resp">Não. Produtos que remuneram melhor não recebem avaliação melhor. Já reduzimos notas por composição não divulgada e por garantia curta em produtos com boa comissão.</div></details>
+<details><summary>Com que frequência as análises são atualizadas?</summary><div class="resp">Revisamos as análises periodicamente e sempre que identificamos mudança relevante de preço, kit ou política de garantia. Cada página traz a data da última revisão.</div></details>
+</div>
+
+<div class="rel">
+<b>Continue navegando</b>
+<a href="/quem-somos/">→ Quem somos</a>
+<a href="/metodologia/">→ Metodologia de análise</a>
+<a href="/privacidade/">→ Política de privacidade</a>
+<a href="/termos/">→ Termos de uso</a>
+<a href="/">→ Página inicial</a>
+</div>
+
 <footer>
-  <p>© 2026 Analisa Suplementos · Análises independentes de suplementos brasileiros</p>
-  <p><a href="/quem-somos/">Quem Somos</a> · <a href="/metodologia/">Metodologia</a> · <a href="/privacidade/">Privacidade</a> · <a href="/termos/">Termos de Uso</a></p>
+<p><b>Aviso:</b> conteúdo informativo, não substitui consulta médica ou nutricional. Suplementos alimentares não tratam, curam nem previnem doenças e não substituem alimentação equilibrada. Consulte um profissional antes de iniciar qualquer suplementação.</p>
+<p><b>Divulgação:</b> este site contém links de afiliado. Podemos receber comissão por compras realizadas, sem custo adicional para você. Isso não altera nossas análises nem as notas atribuídas.</p>
+<p>© 2026 Analisa Suplementos · <a href="/quem-somos/">Quem Somos</a> · <a href="/metodologia/">Metodologia</a> · <a href="/privacidade/">Privacidade</a> · <a href="/termos/">Termos</a></p>
 </footer>
+</div>
 </body>
 </html>
